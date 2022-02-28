@@ -57,31 +57,6 @@ const theme = createTheme({
       fontSize: ".85em",
     },
   },
-  // overrides: {
-  //   MuiButton: {
-  //     contained: {
-  //       "box-shadow": primaryShadow,
-  //     },
-  //     outlined: {
-  //       "box-shadow": primaryShadow,
-  //     },
-  //   },
-  //   MuiChip: {
-  //     root: {
-  //       "border-radius": "4px",
-  //     },
-  //   },
-  //   MuiInputBase: {
-  //     root: {
-  //       "font-size": "inherit",
-  //     },
-  //   },
-  //   MuiFormLabel: {
-  //     root: {
-  //       "font-size": "inherit",
-  //     },
-  //   },
-  // },
 });
 
 export default theme;

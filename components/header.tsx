@@ -31,7 +31,7 @@ const Header: React.FunctionComponent<Props> = ({
   siteTitleComponent,
 }) => {
   const classes = useStyles();
-  return <AppBar position="sticky" className={classes.navbar}></AppBar>;
+  return <AppBar position="static"></AppBar>;
 };
 
 export default Header;
