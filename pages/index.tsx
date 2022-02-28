@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
-import BaseLayout from "../components/BaseLayout";
+import Layout from "../components/layout";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <BaseLayout />
+      <Layout />
       <footer className="">fujinRaijin★</footer>
     </div>
   );
