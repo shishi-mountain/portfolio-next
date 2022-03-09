@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Layout>
+        <Layout title={pageProps.title}>
           <CssBaseline />
           <Component {...pageProps} />;{" "}
         </Layout>

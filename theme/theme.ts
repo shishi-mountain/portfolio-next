@@ -7,7 +7,7 @@ const primaryShadow =
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#4bc0c8",
+      main: "#03045E",
       contrastText: "#fff",
     },
     text: {
@@ -15,7 +15,7 @@ const theme = createTheme({
       secondary: "#999",
     },
     background: {
-      default: "#f7fcfd",
+      default: "#caf0f8",
     },
   },
   typography: {

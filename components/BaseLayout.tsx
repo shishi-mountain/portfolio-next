@@ -79,38 +79,17 @@ const Layout = ({ children, ...props }: Props) => {
 
   return (
     <ThemeProvider theme={mdTheme}>
-      <Box sx={{ display: "flex" }}>
+      <Box
+        sx={{
+          display: "flex",
+          color: "text.primary",
+          backgroundImage: "../styles/image/backwater.jpg",
+          // bgcolor: "text.disabled",
+        }}
+      >
         <CssBaseline />
-        <AppBar position="absolute" open={open}>
-          <Toolbar
-            className="bg-gray-500"
-            sx={{
-              pr: "24px", // keep right padding when drawer closed
-            }}
-          >
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="open drawer"
-              onClick={toggleDrawer}
-              sx={{
-                marginRight: "36px",
-                ...(open && { display: "none" }),
-              }}
-            ></IconButton>
-            <Typography
-              component="h1"
-              variant="h6"
-              color="inherit"
-              noWrap
-              sx={{ flexGrow: 1 }}
-            >
-              {props.title}
-            </Typography>
-          </Toolbar>
-        </AppBar>
         <Drawer variant="permanent" open={open}>
-          <Toolbar
+          {/* <Toolbar
             sx={{
               display: "flex",
               alignItems: "center",
@@ -119,7 +98,7 @@ const Layout = ({ children, ...props }: Props) => {
             }}
           >
             <IconButton onClick={toggleDrawer}></IconButton>
-          </Toolbar>
+          </Toolbar> */}
           <Divider />
           <List component="nav">
             <MainListItems />
@@ -129,16 +108,14 @@ const Layout = ({ children, ...props }: Props) => {
         <Box
           component="main"
           sx={{
-            backgroundColor: (theme) =>
-              theme.palette.mode === "light"
-                ? theme.palette.grey[100]
-                : theme.palette.grey[900],
+            // backgroundColor: "red",
+            backgroundImage: "../styles/image/backwater.jpg",
             flexGrow: 1,
             height: "100vh",
             overflow: "auto",
           }}
         >
-          <Toolbar />
+          {/* <Toolbar /> */}
           {children}
         </Box>
       </Box>
