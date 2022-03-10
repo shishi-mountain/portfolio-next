@@ -145,6 +145,6 @@ function Top() {
   );
 }
 
-export default function Pricing() {
+export default function Skill() {
   return <Top />;
 }

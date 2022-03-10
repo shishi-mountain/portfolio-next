@@ -54,13 +54,15 @@ const Layout = ({ children }: Props) => {
       >
         <Toolbar sx={{ flexWrap: "wrap" }}>
           <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-            my portfolio
+            <Link href="/" variant="button" color="text.primary">
+              Chiharu's portfolio
+            </Link>
           </Typography>
           <nav>
             <Link
               variant="button"
               color="text.primary"
-              href="#"
+              href="about"
               sx={{ my: 1, mx: 1.5 }}
             >
               About
@@ -68,7 +70,7 @@ const Layout = ({ children }: Props) => {
             <Link
               variant="button"
               color="text.primary"
-              href="#"
+              href="/skill"
               sx={{ my: 1, mx: 1.5 }}
             >
               Skill
@@ -76,10 +78,18 @@ const Layout = ({ children }: Props) => {
             <Link
               variant="button"
               color="text.primary"
-              href="#"
+              href="/portfolio"
               sx={{ my: 1, mx: 1.5 }}
             >
               Portfolio
+            </Link>
+            <Link
+              variant="button"
+              color="text.primary"
+              href="/contact"
+              sx={{ my: 1, mx: 1.5 }}
+            >
+              Contact
             </Link>
           </nav>
         </Toolbar>
@@ -87,7 +97,7 @@ const Layout = ({ children }: Props) => {
       <Container>
         <main>{children}</main>
         {/* Footer */}
-        <Container
+        {/* <Container
           maxWidth="md"
           component="footer"
           sx={{
@@ -114,7 +124,7 @@ const Layout = ({ children }: Props) => {
               </Grid>
             ))}
           </Grid>
-        </Container>
+        </Container> */}
         {/* End footer */}
         <Copyright sx={{ mt: 5 }} />
       </Container>
