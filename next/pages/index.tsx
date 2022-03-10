@@ -29,12 +29,6 @@ const tiers = [
     buttonText: "Look!",
     buttonVariant: "outlined",
   },
-  {
-    title: "Contact",
-    description: ["contact me", "30 GB of storage"],
-    buttonText: "Contact us",
-    buttonVariant: "outlined",
-  },
 ];
 
 function Top() {
