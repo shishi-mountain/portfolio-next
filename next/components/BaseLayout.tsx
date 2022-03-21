@@ -19,7 +19,7 @@ function Copyright(props: any) {
     >
       {"Copyright © "}
       <Link color="inherit" href="">
-        FujinRaijin
+        FuRai
       </Link>{" "}
       {/* {new Date().getFullYear()} */}
       2022
@@ -55,7 +55,7 @@ const Layout = ({ children }: Props) => {
         <Toolbar sx={{ flexWrap: "wrap" }}>
           <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
             <Link href="/" variant="button" color="text.primary">
-              Chiharu's portfolio
+              Furai's portfolio
             </Link>
           </Typography>
           <nav>

@@ -14,6 +14,8 @@ function FormRow() {
           <Item>
             <h4>FuRai</h4>
             <p>1977.1生</p>
+            <p>主婦</p>
+            <p>webエンジニア</p>
           </Item>
         </Grid>
         <Grid item xs={6}>
