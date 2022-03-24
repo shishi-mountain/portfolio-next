@@ -9,6 +9,7 @@ import Container from "@mui/material/Container";
 import List from "@mui/material/List";
 import { ListItem, ListItemAvatar } from "@mui/material";
 import LevelStar from "../components/LevelStar";
+import { ImportantDevices } from "@mui/icons-material";
 
 interface skillType {
   name: string;
@@ -97,7 +98,7 @@ function Top() {
             <Grid item key={skill.title} xs={12} sm={6} md={4}>
               <Card sx={{ height: "300px" }}>
                 <CardHeader
-                  title={skill.title}
+                  subheader={skill.title}
                   titleTypographyProps={{ align: "center" }}
                   subheaderTypographyProps={{
                     align: "center",
@@ -107,6 +108,7 @@ function Top() {
                       theme.palette.mode === "light"
                         ? theme.palette.grey[200]
                         : theme.palette.grey[700],
+                    fontSize: "16px !important",
                   }}
                 />
                 <CardContent>
